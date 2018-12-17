@@ -11,6 +11,13 @@ html,
 body {
   height: 2000px;
 }
+/* 表格 */
+.table.table-bordered th,
+.table.table-bordered td {
+  text-align: center;
+  vertical-align: middle;
+}
+
 ul {
   padding: 0;
   margin: 0;
@@ -21,7 +28,6 @@ section {
   padding-top: 50px;
   overflow: hidden;
 }
-
 section aside {
   height: 100%;
   width: 180px;
@@ -124,10 +130,6 @@ section aside .nav i {
 .bread {
   margin-top: 20px;
 }
-/* 图像 */
-.echarts .zhu,
-.echarts .dot {
-  width: 48%;
-  height: 400px;
-  background-color: #ccc;
+.mt_20 {
+  margin-top: 20px;
 }

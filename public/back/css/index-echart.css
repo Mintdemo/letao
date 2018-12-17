@@ -1,0 +1,7 @@
+/* 图像 */
+.echarts .zhu,
+.echarts .dot {
+  width: 48%;
+  height: 400px;
+  background-color: #ccc;
+}
