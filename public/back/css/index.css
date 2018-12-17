@@ -1,0 +1,133 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+html,
+body {
+  height: 2000px;
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+section {
+  padding-left: 180px;
+  padding-top: 50px;
+  overflow: hidden;
+}
+
+section aside {
+  height: 100%;
+  width: 180px;
+  background-color: #253135;
+  position: fixed;
+  left: 0;
+  top: 0;
+  transition: 1s;
+  z-index: 999;
+}
+aside.current {
+  margin-left: -180px;
+}
+section aside h2 {
+  color: #fff;
+  background-color: #0080a9;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 28px;
+}
+section aside .user {
+  height: 180px;
+  padding-top: 30px;
+  text-align: center;
+}
+section aside .user .photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+section aside .user .sup {
+  color: #fff;
+  font-size: 18px;
+  height: 40px;
+  line-height: 40px;
+}
+
+section aside .nav li {
+  width: 100%;
+}
+
+section aside .nav a.current {
+  background-color: #242627;
+  border-left: 3px solid #006798;
+}
+section aside .nav a {
+  padding-left: 40px;
+  color: #fff;
+  display: block;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  text-decoration: none;
+  border-left: 3px solid transparent;
+}
+section aside .nav .child a {
+  padding-left: 50px;
+}
+section aside .nav i {
+  display: inline-block;
+}
+
+/* 乐淘顶部 */
+.lt_top {
+  height: 50px;
+  line-height: 50px;
+  background-color: #008ebc;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-left: 180px;
+  width: 100%;
+  z-index: 666;
+  transition: 1s;
+}
+.lt_top.current {
+  padding-left: 0;
+}
+.lt_top .icon_left,
+.icon_right {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* 面包屑 */
+.main {
+  margin-left: 0;
+  transition: 1s;
+}
+.main.current {
+  margin-left: -180px;
+}
+.bread {
+  margin-top: 20px;
+}
+/* 图像 */
+.echarts .zhu,
+.echarts .dot {
+  width: 48%;
+  height: 400px;
+  background-color: #ccc;
+}

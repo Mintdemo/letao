@@ -72,6 +72,7 @@ $(function() {
         if (info.error === 1000) {
           $('.form-horizontal')
             .data('bootstrapValidator')
+            //  校验名称 , 验证失败 ,提示函数
             .updateStatus('username', 'INVALID', 'callback');
         }
         if (info.error === 1001) {
