@@ -133,3 +133,9 @@ section aside .nav i {
 .mt_20 {
   margin-top: 20px;
 }
+
+.form .form-control-feedback {
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+}
