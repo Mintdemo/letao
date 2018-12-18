@@ -135,7 +135,7 @@
           <h4 class="modal-title" id="myModalLabel">添加分类</h4>
         </div>
         <!-- 表单 -->
-        <form action="" id="drop">
+        <form id="form">
         <div class="modal-body">
           <!-- 下拉菜单 -->
           <div class="form-group has-feedback" >
@@ -150,10 +150,13 @@
                   <!-- 挖个坑 -->
                 </ul>
               </div>
+              <input type="hidden" name="categoryId">
           </div>
           <!-- drop隐藏域 -->
+          <!-- <div class="form-group has-feedback" >
           <input type="hidden" name="categoryId">
-         
+          </div>
+          -->
           <!-- input表单 -->
           <div class="form-group has-feedback">
             <input type="text" class="form-control" placeholder="请输入二级分类" name="brandName">
@@ -161,21 +164,22 @@
              <!-- 上传图片 -->
           <div class="form-group has-feedback">
               <label for="fileupload" class="btn btn-default">上传图片</label>
-              <input type="file" style="display:none"  name="pic1" id="fileupload"  data-url="/category/addSecondCategoryPic" >
-              <input type="hidden" name="categoryId">
+              <input type="file" style="display:none"  name="pic1" id="fileupload"> 
+              <input type="hidden" name="brandLogo">
           </div>
             <!-- 图片预览 -->
           <div class="form-group has-feedback " id="imgBox">
               <img src="./images/none.png" alt="" width="100" class="mt_20">
           </div>
         </div> 
-      </form>
+    
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">
             取消
           </button>
           <input type="submit" class="btn btn-primary" id="addCart" value="添加">
         </div>
+      </form>
       </div>
     </div>
   </div>
@@ -203,14 +207,16 @@
     <script src="./lib/jquery/jquery.min.js"></script>
     <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
     <script src="./lib/bootstrap-validator/js/bootstrapValidator.min.js"></script>
-    <script src="./lib/bootstrap-paginator/bootstrap-paginator.min.js"></script>
     <script src="./lib/nprogress/nprogress.js"></script>
     <script src="./lib/artTemplate/template-web.js"></script>
-    <!-- 引入fileupload 包 -->
+    <script src="./lib/bootstrap-paginator/bootstrap-paginator.min.js"></script>
+        <!-- 引入fileupload 包 -->
     <script src="./lib/jquery-fileupload/jquery.ui.widget.js"></script>
     <script src="./lib/jquery-fileupload/jquery.fileupload.js"></script>
     <script src="./js/common.js"></script>
-    <!-- <script src="./js/islogin.js"></script> -->
     <script src="./js/second.js"></script>
+
+   
+    <!-- <script src="./js/islogin.js"></script> -->
   </body>
 </html>
