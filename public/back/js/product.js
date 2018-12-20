@@ -66,7 +66,7 @@ $(function() {
       .updateStatus('brandId', 'VALID');
   });
 
-  // 4.fileupload上传问价初始化
+  // 4.fileupload上传文件初始化
   $('#fileupload').fileupload({
     dataType: 'json',
     done: function(e, data) {

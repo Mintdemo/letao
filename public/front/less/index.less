@@ -1,0 +1,38 @@
+@import './var.less';
+@import './common.less';
+
+// 导航开始
+.lt_nav {
+  padding: 10px;
+  li {
+    width: 33.33%;
+    float: left;
+  }
+}
+
+// 商品区
+.lt_product {
+  padding: 10px;
+  text-align: center;
+  li {
+    padding: 10px;
+    width: 48%;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    border-radius: 5px;
+    .money {
+      .price {
+        color: red;
+      }
+      .Oldprice {
+        text-decoration: line-through;
+      }
+    }
+  }
+  li:nth-child(odd) {
+    float: left;
+  }
+  li:nth-child(even) {
+    float: right;
+  }
+}

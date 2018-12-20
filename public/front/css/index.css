@@ -1,0 +1,135 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+}
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+html,
+body {
+  height: 100%;
+}
+.lt_container {
+  width: 100%;
+  height: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+  background-color: #fff;
+  min-width: 320px;
+  position: relative;
+  padding-top: 45px;
+  padding-bottom: 55px;
+}
+.lt_header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 45px;
+  background-color: #006798;
+  padding: 0 45px;
+}
+.lt_header i {
+  color: #fff;
+}
+.lt_header .home,
+.lt_header .search {
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  line-height: 45px;
+  position: absolute;
+}
+.lt_header .search {
+  right: 0;
+}
+.lt_header .home {
+  left: 0;
+}
+.lt_header h3 {
+  text-align: center;
+  line-height: 45px;
+  height: 45px;
+  font-size: 20px;
+  color: #fff;
+  font-weight: normal;
+}
+footer {
+  width: 100%;
+  height: 55px;
+  background-color: #006798;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  max-width: 640px;
+  margin: 0 auto;
+  left: 50%;
+  transform: translateX(-50%);
+}
+footer a.current {
+  color: #f91;
+}
+footer a.current p {
+  color: #f91;
+}
+footer a {
+  text-align: center;
+  color: #fff;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding-top: 8px;
+}
+footer a p {
+  color: #fff;
+}
+footer li {
+  width: 25%;
+  float: left;
+}
+.main {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.lt_nav {
+  padding: 10px;
+}
+.lt_nav li {
+  width: 33.33%;
+  float: left;
+}
+.lt_product {
+  padding: 10px;
+  text-align: center;
+}
+.lt_product li {
+  padding: 10px;
+  width: 48%;
+  border: 1px solid #ccc;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+.lt_product li .money .price {
+  color: red;
+}
+.lt_product li .money .Oldprice {
+  text-decoration: line-through;
+}
+.lt_product li:nth-child(odd) {
+  float: left;
+}
+.lt_product li:nth-child(even) {
+  float: right;
+}

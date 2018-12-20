@@ -1,0 +1,109 @@
+@import './var.less';
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+}
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+html,
+body {
+  height: 100%;
+}
+// 乐淘主体
+.lt_container {
+  width: 100%;
+  height: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+  background-color: #fff;
+  min-width: 320px;
+  position: relative;
+  padding-top: 45px;
+  padding-bottom: 55px;
+}
+.lt_header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 45px;
+  background-color: @themecolor;
+  padding: 0 45px;
+  i {
+    color: #fff;
+  }
+  .home,
+  .search {
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    position: absolute;
+  }
+  .search {
+    right: 0;
+  }
+  .home {
+    left: 0;
+  }
+
+  h3 {
+    text-align: center;
+    line-height: 45px;
+    height: 45px;
+    font-size: 20px;
+    color: #fff;
+    font-weight: normal;
+  }
+}
+footer {
+  width: 100%;
+  height: 55px;
+  background-color: @themecolor;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  max-width: 640px;
+  margin: 0 auto;
+  left: 50%;
+  transform: translateX(-50%);
+  a.current {
+    color: #f91;
+    p {
+      color: #f91;
+    }
+  }
+  a {
+    text-align: center;
+    color: #fff;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding-top: 8px;
+    p {
+      color: #fff;
+    }
+  }
+
+  li {
+    width: 25%;
+    float: left;
+  }
+}
+.main {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
