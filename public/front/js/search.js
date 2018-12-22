@@ -29,14 +29,17 @@ $(function() {
   $('.trash').on('click', function() {
     // 跳出模态框提示
     // .confirm( message, title, btnValue, callback [, type] )
-    confirm('你确定要清空历史记录嘛', '温馨提示', ['取消', '确定'], function(
-      e
-    ) {
-      if (index === 1) {
-        localStorage.removeItem('search_list');
-        render();
+    mui.confirm(
+      '你确定要清空历史记录嘛',
+      '温馨提示',
+      ['取消', '确定'],
+      function(e) {
+        if (index === 1) {
+          localStorage.removeItem('search_list');
+          render();
+        }
       }
-    });
+    );
   });
   //  功能3: 点击删除单个历史
   $('.search_his').on('click', '.btn_delete', function() {
@@ -70,12 +73,14 @@ $(function() {
     $('.search_input').val('');
     localStorage.setItem('search_list', JSON.stringify(arr));
     render();
+    // 跳转到 searchList 页面 并且拼接搜索框的值
+    location.href = 'searchList.html?key=' + text;
+  });
+  // 功能五 ： 点击底部的文字渲染到搜索框中
+  $('.content').on('click', '.txt', function() {
+    var text = $(this).text();
+    console.log(text);
+    $('.search_input').val(text);
+    $('.search_btn').trigger('click');
   });
 });
-// if (arr.indexOf(arr.id) != -1) {
-//   var items = arr.splice(id, 1);
-//   arr.unshift(items);
-// } else {
-//
-// }
-// 清空搜索框

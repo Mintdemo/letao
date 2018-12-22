@@ -1,0 +1,157 @@
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.lt_container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  max-width: 640px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding-top: 45px;
+  padding-bottom: 55px;
+  position: relative;
+}
+
+.lt_header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 45px;
+  width: 100%;
+  background-color: #006699;
+  padding: 0 45px;
+}
+.lt_header .icon_left,
+.lt_header .icon_right {
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  position: absolute;
+  top: 0;
+  text-align: center;
+  color: #fff;
+}
+.lt_header .icon_left {
+  left: 0;
+}
+.lt_header .icon_right {
+  right: 0;
+}
+.lt_header h3 {
+  line-height: 45px;
+  text-align: center;
+  color: #fff;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+
+
+.lt_footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 55px;
+  width: 100%;
+  background-color: #006699;
+}
+
+.lt_footer li {
+  float: left;
+  width: 25%;
+  text-align: center;
+}
+.lt_footer li a {
+  display: block;
+  color: #fff;
+  padding-top: 8px;
+}
+.lt_footer li a p {
+  margin: 0;
+  color: #fff;
+}
+.lt_footer li a.current {
+  color: orange;
+}
+.lt_footer li a.current p {
+  color: orange;
+}
+
+
+.lt_main {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: #fff;
+}
+
+
+/* 复用的搜索框样式 */
+.lt_search {
+  padding: 10px;
+  position: relative;
+}
+.lt_search .search_input {
+  height: 34px;
+  font-size: 12px;
+  margin: 0;
+  padding-right: 54px;
+  border-radius: 5px;
+  border: 1px solid #007AFF;
+}
+.lt_search .search_btn {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border-radius: 0 5px 5px 0;
+}
+
+
+/* 复用的产品样式 */
+.lt_product {
+  padding: 10px;
+}
+.lt_product li:nth-child(odd) {
+  float: left;
+}
+.lt_product li:nth-child(even) {
+  float: right;
+}
+.lt_product li {
+  width: 48%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.lt_product li .price {
+  color: red;
+}
+.lt_product li .oldPrice {
+  text-decoration: line-through;
+}
+
+.lt_product li img {
+  width: 130px;
+  height: 130px;
+  margin: 0 auto;
+}
+.lt_product li .mui-ellipsis-2 {
+  height: 40px;
+}
